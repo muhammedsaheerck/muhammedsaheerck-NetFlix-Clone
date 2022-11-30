@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
+import 'package:netflix/presentation/fast_laughs/widgets/video_list_items.dart';
 
 class SCreenFastLaughs extends StatelessWidget {
   const SCreenFastLaughs({super.key});
@@ -8,7 +8,11 @@ class SCreenFastLaughs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text('SCreenFastLaughs'),
+      body: SafeArea(
+          child: PageView(
+            scrollDirection: Axis.vertical,
+        children: List.generate(10, ((index) =>   VideoListItem(index: index,))),
+      )),
     );
   }
 }
