@@ -10,3 +10,5 @@ const kheight20 = SizedBox(
   height: 20,
 );
 
+//Border Radius
+BorderRadius kRadius5 = BorderRadius.circular(5);
