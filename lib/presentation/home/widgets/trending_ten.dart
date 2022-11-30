@@ -30,12 +30,12 @@ class TrendingTenCard extends StatelessWidget {
           ],
         ),
         Padding(
-          padding:  EdgeInsets.only(left: 20,top: 70),
+          padding:const  EdgeInsets.only(left: 20,top: 70),
           child: BorderedText(
             strokeWidth: 2,strokeColor:Colors.white ,
             child: Text(
               '${index + 1}',
-              style: TextStyle(fontSize: 120,color: Colors.black,decoration: TextDecoration.none,fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 120,color: Colors.black,decoration: TextDecoration.none,fontWeight: FontWeight.bold),
             ),
           ),
         ),
