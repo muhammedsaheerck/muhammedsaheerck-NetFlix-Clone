@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/colors/colors.dart';
 import '../../../core/constants.dart';
 import '../../home/widgets/custom_button_widget.dart';
+import '../../widgets/video_widget..dart';
 
 class ComingSoonWidget extends StatelessWidget {
   const ComingSoonWidget({Key? key, F}) : super(key: key);
@@ -39,27 +40,9 @@ class ComingSoonWidget extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(
-                  width: double.infinity,
-                  height: 200,
-                  child: Stack(
-                    children: [
-                      Image.network(
-                        NewAndHotComming,
-                        fit: BoxFit.cover,
-                      ),
-                      Positioned(
-                        bottom: 15,
-                        right: 10,
-                        child: CircleAvatar(
-                            backgroundColor: Colors.black.withOpacity(0.5),
-                            radius: 22,
-                            child: IconButton(
-                                onPressed: () {},
-                                icon: const Icon(Icons.volume_off))),
-                      ),
-                    ],
-                  )),
+              const VideoWidget(
+                image: NewAndHotComming,
+              ),
               kheight,
               Padding(
                 padding: const EdgeInsets.all(5.0),
