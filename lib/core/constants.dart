@@ -17,3 +17,8 @@ BorderRadius kRadius5 = BorderRadius.circular(5);
 
 const mainImage =
     'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fjAAxDPzllwnCMqHDXYlw4IlkaL.jpg';
+
+// TExtStyles
+
+TextStyle kHomeTitleText =
+    const TextStyle(fontSize: 14, fontWeight: FontWeight.bold);
